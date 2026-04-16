@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Macintosh Package Tracker – MapLibre</title>
+
+<link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="mac-window">
+  <div class="title-bar">
+    <div class="buttons">
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+    <span>Package Tracker</span>
+  </div>
+
+  <div class="content">
+
+    <div class="tracking-box">
+      <input id="trackingId" type="text" placeholder="Tracking ID">
+      <button id="trackBtn">Track</button>
+    </div>
+
+    <div class="status-box">
+      <h3>Status</h3>
+      <ul id="timeline">
+        <li>Picked Up</li>
+        <li>In Transit</li>
+        <li>Out for Delivery</li>
+        <li>Delivered</li>
+      </ul>
+    </div>
+
+    <div class="map-wrapper">
+      <div id="map"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
